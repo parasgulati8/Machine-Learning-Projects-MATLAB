@@ -2,12 +2,13 @@ load shoesducks.mat
 shoesDucks1(X,Y);
 function []= shoesDucks1(x, y)
 n = size(x,1);
-trainingInput= x(1:72,:);
-trainingOutput = y(1:72);
-testInput = x(73:144,:);
-testOutput = y(73:144);
+TrainIndex = randsample(n, n/2);
+TestIndex = setdiff(1:n, TrainIndex);
+trainingInput= x(TrainIndex,:);
+trainingOutput = y(TrainIndex, :);
+testInput = x(TestIndex,:);
+testOutput = y(TestIndex,:);
 % linear Kernel
-
 [t , alpha , b] = svc (trainingInput, trainingOutput);
 linSVC = svcoutput( trainingInput , trainingOutput , testInput , 'linear' , alpha , b) ;
 linearErr= svcerror(trainingInput , trainingOutput , testInput , testOutput , 'linear' , alpha , b);
@@ -16,7 +17,7 @@ display(linearErr);
 % Polynomial Kernel
 polyErr = [];
 global p1;
-for i = 1:5
+for i = 1:20
     p1 = i
     [t , alpha , b] = svc (trainingInput, trainingOutput, 'poly');
     polySVC = svcoutput( trainingInput , trainingOutput , testInput , 'poly' , alpha , b) ;  
@@ -24,7 +25,8 @@ for i = 1:5
 end
 display(polyErr);
 figure;
-plot ( 1:5 , polyErr ) ;
+plot ( 1:20 , polyErr ) ;
+
 ymin = min(polyErr);
 display (ymin);
 % RBF kernel
