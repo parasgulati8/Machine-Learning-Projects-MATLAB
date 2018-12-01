@@ -16,3 +16,6 @@ Run the matlab code and it will load the dataset and run the Support Vector Mach
 <h4> Error corresponding to different standard deviations </h4>
 
 ![rbf error](https://user-images.githubusercontent.com/43897597/49333650-9c3ae000-f590-11e8-86c8-200f3fd0bad7.jpg)
+
+## Credits
+Used the SVM library created by Steve Gunn which is available at http://www.isis.ecs.soton.ac.uk/resources/svminfo/
