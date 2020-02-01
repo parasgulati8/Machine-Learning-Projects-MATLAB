@@ -7,7 +7,9 @@
 ###  2. Support Vector Machine
 
   This project implements Support Vector Machine algorithm to classify data using different kernels(linear, polynomia and RBF).
+  
   <h4> Error corresponding to different polynomial degrees </h4>
+  
 ![polynomial error](https://user-images.githubusercontent.com/43897597/49333646-993fef80-f590-11e8-865c-430b4e53648e.jpg)
 
 ## Principal Component Analysis
