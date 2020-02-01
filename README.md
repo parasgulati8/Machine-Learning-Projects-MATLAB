@@ -1,5 +1,5 @@
 # Machine-Learning-Projects-MATLAB
-<h2> * Classification Models </h2>
+## Classification Models 
 ###  1. Perceptron Learning
   
   This project is an implementation of the linear perceptron using stochastic gradient descent (SGD) in MATLAB.
@@ -10,7 +10,7 @@
   <h4> Error corresponding to different polynomial degrees </h4>
 ![polynomial error](https://user-images.githubusercontent.com/43897597/49333646-993fef80-f590-11e8-865c-430b4e53648e.jpg)
 
-<h2> * Principal Component Analysis </h2>
+## Principal Component Analysis
 
 This project is an implementation of the PCA algorithm in machine learning using MATLAB. A dataset of teapot images is used and the images are re-created by using only three principal features of the images.
 
