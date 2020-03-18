@@ -1,8 +1,10 @@
 # Machine-Learning-Projects-MATLAB
+## Descrption
+These projects are part of class assignments that were aimed to inculcate a deeper understanding of machine learning algorithms such as Classification with Perceptron, Support Vector Machine and Principal Component Analysis (PCA). These were implemented in MATLAB without using any libraries. Implementing the algorithms such as SVM, Stochastic Gradient Descent (SGD), and PCA from scratch enhanced the understanding of the core ML concepts like classiication, optimization and dimensionality reduction 
 ## Classification Models 
 ###  1. Perceptron Learning
   
-  This project is an implementation of the linear perceptron using stochastic gradient descent (SGD) in MATLAB.
+  This project is an implementation of the linear perceptron using stochastic gradient descent (SGD) in MATLAB. The dataset is a set of points in 2D space which are linearly separable. 
   ![decision boundary](https://user-images.githubusercontent.com/43897597/49332985-d7cfad00-f584-11e8-8702-39c9a2e38ef5.jpg)
 ###  2. Support Vector Machine
 
